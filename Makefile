@@ -1,6 +1,6 @@
 CC=clang
 OBJCOPY=arm-none-eabi-objcopy
-CFLAGS=-target arm-none-eabi -mcpu=cortex-m7 -I include
+CFLAGS=-target arm-none-eabi -mcpu=cortex-m7
 b10: main.c
 	$(CC) -o "Ben 10" main.c
 	$(OBJCOPY) -O binary "Ben 10"
