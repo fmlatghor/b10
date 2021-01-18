@@ -13,18 +13,76 @@ __meta__ = {
 }
 
 [node name="Panel" type="Panel" parent="."]
-margin_right = 286.0
-margin_bottom = 600.0
+margin_left = -0.463303
+margin_top = 0.463287
+margin_right = 285.537
+margin_bottom = 600.463
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="b11" type="Sprite" parent="."]
+[node name="logo" type="Sprite" parent="."]
 position = Vector2( 142.452, 199.077 )
 scale = Vector2( 0.245326, 0.245326 )
 texture = ExtResource( 1 )
 
-[node name="703199" type="Sprite" parent="."]
-position = Vector2( 594.162, 298.221 )
-scale = Vector2( 0.497036, 0.497036 )
+[node name="bg" type="Sprite" parent="."]
+position = Vector2( 596, 300 )
+scale = Vector2( 0.500001, 0.500001 )
 texture = ExtResource( 2 )
+
+[node name="Button" type="Button" parent="."]
+anchor_left = 0.139
+anchor_top = 1.0
+anchor_right = 0.139
+anchor_bottom = 1.0
+margin_left = -130.0
+margin_top = -263.0
+margin_right = 130.0
+margin_bottom = -211.0
+text = "Start"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="."]
+anchor_left = 0.139
+anchor_top = 1.0
+anchor_right = 0.139
+anchor_bottom = 1.0
+margin_left = -130.0
+margin_top = -197.118
+margin_right = 130.0
+margin_bottom = -145.118
+text = "Continue"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="."]
+anchor_left = 0.139
+anchor_top = 1.0
+anchor_right = 0.139
+anchor_bottom = 1.0
+margin_left = -130.0
+margin_top = -132.118
+margin_right = 130.0
+margin_bottom = -80.1178
+text = "Settings"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button4" type="Button" parent="."]
+anchor_left = 0.139
+anchor_top = 1.0
+anchor_right = 0.139
+anchor_bottom = 1.0
+margin_left = -130.0
+margin_top = -66.1178
+margin_right = 130.0
+margin_bottom = -14.1178
+text = "Quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
