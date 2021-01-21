@@ -12,82 +12,75 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect" type="TextureRect" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Panel" type="Panel" parent="TextureRect"]
+[node name="Start_Menu" type="Panel" parent="."]
 margin_right = 286.0
 margin_bottom = 600.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="logo" type="Sprite" parent="TextureRect"]
-position = Vector2( 140.772, 166.798 )
-scale = Vector2( 0.309629, 0.309629 )
-texture = ExtResource( 1 )
-
-[node name="bg" type="Sprite" parent="TextureRect"]
-position = Vector2( 655.74, 300 )
-scale = Vector2( 0.462174, 0.5 )
-texture = ExtResource( 2 )
-
-[node name="New_Game" type="Button" parent="."]
+[node name="New_Game" type="Button" parent="Start_Menu"]
 anchor_left = 0.139
 anchor_top = 1.0
 anchor_right = 0.139
 anchor_bottom = 1.0
-margin_left = -130.0
+margin_left = -27.418
 margin_top = -263.0
-margin_right = 130.0
+margin_right = 232.582
 margin_bottom = -211.0
 text = "New Game"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Continue" type="Button" parent="."]
+[node name="Continue" type="Button" parent="Start_Menu"]
 anchor_left = 0.139
 anchor_top = 1.0
 anchor_right = 0.139
 anchor_bottom = 1.0
-margin_left = -130.0
+margin_left = -27.418
 margin_top = -197.118
-margin_right = 130.0
+margin_right = 232.582
 margin_bottom = -145.118
 text = "Continue"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Settings" type="Button" parent="."]
+[node name="Settings" type="Button" parent="Start_Menu"]
 anchor_left = 0.139
 anchor_top = 1.0
 anchor_right = 0.139
 anchor_bottom = 1.0
-margin_left = -130.0
+margin_left = -27.418
 margin_top = -132.118
-margin_right = 130.0
+margin_right = 232.582
 margin_bottom = -80.1178
 text = "Settings"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Quit" type="Button" parent="."]
+[node name="Quit" type="Button" parent="Start_Menu"]
 anchor_left = 0.139
 anchor_top = 1.0
 anchor_right = 0.139
 anchor_bottom = 1.0
-margin_left = -130.0
+margin_left = -27.418
 margin_top = -66.1178
-margin_right = 130.0
+margin_right = 232.582
 margin_bottom = -14.1178
 text = "Quit"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="logo" type="Sprite" parent="."]
+position = Vector2( 140.772, 166.798 )
+scale = Vector2( 0.309629, 0.309629 )
+texture = ExtResource( 1 )
+
+[node name="bg" type="Sprite" parent="."]
+position = Vector2( 655.74, 300 )
+scale = Vector2( 0.462174, 0.5 )
+texture = ExtResource( 2 )
