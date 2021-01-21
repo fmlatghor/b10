@@ -4,11 +4,11 @@ var main_menu
 var settings_menu
 
 func ready():
-	main_menu = $Main_Menu
+	start_menu = $Start_Menu
 	settings_menu = $Settings_Menu
 
-	main_menu.connect("pressed", self, "main_menu_button_pressed", ["New_Game"])
-	main_menu/Continue.connect("pressed", self, "main_menu_button_pressed", ["Continue"])
+	$Start_Menu.connect("pressed", self, "main_menu_button_pressed", ["New_Game"])
+	$Start_Menu/Continue.connect("pressed", self, "main_menu_button_pressed", ["Continue"])
 	$Main_Menu/Settings.connect("pressed", self, "main_menu_button_pressed", ["Settings"])
 	$Main_Menu/Quit.connect("pressed", self, "main_menu_button_pressed", ["Quit"])
 
