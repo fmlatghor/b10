@@ -1,6 +1,6 @@
 extends Control
 
-var main_menu
+var start_menu
 var settings_menu
 
 func ready():
@@ -9,8 +9,8 @@ func ready():
 
 	$Start_Menu.connect("pressed", self, "main_menu_button_pressed", ["New_Game"])
 	$Start_Menu/Continue.connect("pressed", self, "main_menu_button_pressed", ["Continue"])
-	$Main_Menu/Settings.connect("pressed", self, "main_menu_button_pressed", ["Settings"])
-	$Main_Menu/Quit.connect("pressed", self, "main_menu_button_pressed", ["Quit"])
+	$Start_Menu/Settings.connect("pressed", self, "main_menu_button_pressed", ["Settings"])
+	$Start_Menu/Quit.connect("pressed", self, "main_menu_button_pressed", ["Quit"])
 
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	
@@ -23,6 +23,6 @@ func main_menu_button_pressed(button_name):
 	#if button_name == "new_game":
 	if button_name == "settings":
 		settings_menu.visible = true
-		main_menu.visible = false
+		start_menu.visible = false
 	elif button_name == "quit":
 		get_tree().quit()
