@@ -1,15 +1,15 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://assets/menu/logo.png" type="Texture" id=1]
+[ext_resource path="res://main_menu.gd" type="Script" id=1]
 [ext_resource path="res://assets/menu/bg.png" type="Texture" id=2]
-[ext_resource path="res://main_menu.gd" type="Script" id=3]
+[ext_resource path="res://assets/menu/logo.png" type="Texture" id=3]
 
 [node name="Main_Menu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -1.22772
 margin_right = -1.22772
-script = ExtResource( 3 )
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -80,7 +80,7 @@ __meta__ = {
 [node name="logo" type="Sprite" parent="Start_Menu"]
 position = Vector2( 140.772, 166.798 )
 scale = Vector2( 0.309629, 0.309629 )
-texture = ExtResource( 1 )
+texture = ExtResource( 3 )
 
 [node name="bg" type="Sprite" parent="Start_Menu"]
 position = Vector2( 655.74, 300 )

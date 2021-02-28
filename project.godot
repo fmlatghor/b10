@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Ben 10"
-run/main_scene="res://Control.tscn"
+run/main_scene="res://Main_Menu.tscn"
 config/icon="res://icon.png"
 config/macos_native_icon="res://icon.icns"
 config/windows_native_icon="res://icon.ico"
