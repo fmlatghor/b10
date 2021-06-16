@@ -8,11 +8,9 @@ b10: main.c
 
 fetch:
 	wget -P include https://raw.githubusercontent.com/Omega-Numworks/Omega-External/master/api/extapp_api.h
-	rm include/.gitkeep
 
 prepare:
-	rm include/*
-	touch include/.gitkeep
+	rm -rf include
 
 flash:
 	dfu-util -i 0 -a 0 -s 0x90200000 -D b10.tar
